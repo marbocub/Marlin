@@ -28,20 +28,23 @@
 /**
  * Marlin release version identifier
  */
-//#define SHORT_BUILD_VERSION "bugfix-2.1.x"
+#define SHORT_BUILD_VERSION "2.1.3h-9"
 
 /**
  * Verbose version identifier which should contain a reference to the location
  * from where the binary was downloaded or the source code was compiled.
  */
-//#define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION
+#define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION "Aquila-UBL"
 
 /**
  * The STRING_DISTRIBUTION_DATE represents when the binary file was built,
  * here we define this default string as the date where the latest release
  * version was tagged.
  */
-//#define STRING_DISTRIBUTION_DATE "2026-09-27"
+//#define STRING_DISTRIBUTION_DATE "2026-09-19"
+
+#define STRING_DISTRIBUTION_DATE __DATE__
+#define STRING_DISTRIBUTION_TIME __TIME__
 
 /**
  * The protocol for communication to the host. Protocol indicates communication
@@ -53,15 +56,15 @@
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
  */
-//#define MACHINE_NAME "3D Printer"
+#define MACHINE_NAME "Aquila"
 
 /**
  * The SOURCE_CODE_URL is the location where users will find the Marlin Source
  * Code which is installed on the device. In most cases —unless the manufacturer
- * has a distinct GitHub fork— the Source Code URL should just be the main
+ * has a distinct Github fork— the Source Code URL should just be the main
  * Marlin repository.
  */
-//#define SOURCE_CODE_URL "github.com/MarlinFirmware/Marlin"
+#define SOURCE_CODE_URL "github.com/classicrocker883/MRiscoCProUI"
 
 /**
  * Default generic printer UUID.
@@ -72,7 +75,7 @@
  * The WEBSITE_URL is the location where users can get more information such as
  * documentation about a specific Marlin release.
  */
-//#define WEBSITE_URL "marlinfw.org"
+#define WEBSITE_URL "github.com/classicrocker883/MRiscoCProUI"
 
 /**
  * Set the vendor info the serial USB interface, if changeable.
